@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="30dp"
+tools:context=".MainActivity">
+
+
+<TextView
+    android:id="@+id/txtoutput"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/btnreset"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="-350dp"
+    android:text="00:00:00"
+    android:textColor="@color/colorAccent"
+    android:textSize="50dp"
+
+    android:textStyle="bold" />
+
+
+
+
+
+<Button
+    android:id="@+id/btnadd"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:background="#9FA8DA"
+    android:text="Add session"
+    android:textColor="#FFFFFF"
+
+    />
+
+<Button
+    android:id="@+id/btnstart"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:background="#9FA8DA"
+    android:text="Start"
+    android:layout_below="@+id/btnadd"
+    android:textColor="#FFFFFF"
+
+    />
+
+<Button
+    android:id="@+id/btnreset"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:background="#9FA8DA"
+    android:text="Reset"
+    android:layout_below="@+id/btnstart"
+    android:textColor="#FFFFFF"
+    android:visibility="invisible"
+    tools:visibility="visible"
+
+    />
+
+
+<Button
+    android:id="@+id/btnsettime"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:background="#9FA8DA"
+    android:text="set time"
+    android:layout_below="@+id/btnreset"
+    android:textColor="#FFFFFF"
+
+    />
+
+<TextView
+    android:id="@+id/tvTimer1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/txtoutput"
+    android:layout_centerInParent="true"
+    android:layout_marginTop="-120dp"
+    android:layout_marginBottom="25dp"
+    android:text="00:00:00"
+    android:textColor="@color/colorAccent"
+    android:textSize="40dp"
+    android:textStyle="bold" />
+
+
+</RelativeLayout>
