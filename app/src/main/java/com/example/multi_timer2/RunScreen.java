@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.app.TimePickerDialog;
 import android.graphics.Color;
@@ -23,10 +24,10 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
-import java.util.SimpleTimeZone;
 
 
-public class RunScreen extends Activity {
+
+public class RunScreen extends AppCompatActivity {
 
     private long totalTime = 0;
 
@@ -53,6 +54,10 @@ public class RunScreen extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.run_screen);
+
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
 
         countdowntxt = findViewById(R.id.txtoutput); //display

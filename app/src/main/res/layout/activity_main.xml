@@ -3,19 +3,72 @@
 android:layout_width="match_parent"
 android:layout_height="match_parent">
 
+    <include
+        android:id="@+id/toolbar"
+        layout ="@layout/toolbar" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTimers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/footer" />
+
+
+
     <Button
         android:id="@+id/btnstarttimer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_alignTop="@+id/footer"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:background="#9FA8DA"
-        android:text="Start timer"
+        android:background="@drawable/bt_start"
+        android:text="Start"
         android:textColor="#FFFFFF"
+        android:stateListAnimator="@null"
         android:onClick="onStartTimerClick"
-
-
         />
+
+    <Button
+        android:id="@+id/btSave"
+        android:layout_width="88dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/footer"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:text="Save"
+        android:textColor="#fafafa"
+        android:background="@color/colorBottomMenu"
+        android:stateListAnimator="@null"/>
+
+    <Button
+        android:id="@+id/btAdd"
+        android:layout_width="88dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/footer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:text="Add Timer"
+        android:textColor="#fafafa"
+        android:background="@color/colorBottomMenu"
+        android:stateListAnimator="@null"/>
+
+
+
 
 </RelativeLayout>

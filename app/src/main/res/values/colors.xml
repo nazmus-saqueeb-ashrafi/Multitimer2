@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimary">#9FA8DA</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="btnColor">#CC4C84</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBottomMenu">#902B58</color>
+    <color name="colorBackground">#fafafa</color>
+    <color name="background">#fafafa</color>
+    <color name="colorTextBlack">#231D13</color>
+
+    <color name="cardColor1">#A7D8A9</color>
+
+
+
+
+
+
 </resources>
